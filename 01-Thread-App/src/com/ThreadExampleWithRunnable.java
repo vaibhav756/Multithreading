@@ -12,6 +12,8 @@ public class ThreadExampleWithRunnable implements Runnable{
 	public static void main(String[] args) {
 
 		//ThreadExampleWithRunnable ex=new ThreadExampleWithRunnable();
+		System.out.println(Thread.currentThread().getName());
+		System.out.println("Main method executed...");
 		Thread t=new Thread(new ThreadExampleWithRunnable());
 		t.start();
 	}
