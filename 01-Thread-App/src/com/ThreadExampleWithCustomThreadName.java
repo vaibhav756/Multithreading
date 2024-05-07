@@ -19,7 +19,6 @@ public class ThreadExampleWithCustomThreadName extends Thread{
 		ThreadExampleWithCustomThreadName ex1=new ThreadExampleWithCustomThreadName("Rohan Thread");
 		ex1.start();
 		
-		
 	}
 
 }

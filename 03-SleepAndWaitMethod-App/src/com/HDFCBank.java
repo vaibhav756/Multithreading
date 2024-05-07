@@ -23,6 +23,7 @@ public class HDFCBank {
 	
 	//Object Lock
 	//notify()
+	//When 100 Threads are waiting for execution on same object and we call notify() method then it will allow any 1 thread for execution and we don't know which thread will get the chance for execution
 	public synchronized void deposite(Double bal)
 	{
 		this.balance=this.balance+bal;
@@ -30,7 +31,7 @@ public class HDFCBank {
 	}
 	
 	//Class Lock 
-	//When we write synchronized method on static method it is called as 'Class Lock'
+	//When we write synchronized keyword on static method it is called as 'Class Lock'
 	//Even two different objects can't access this method simultaneously because we have acquired lock on class not on object
 	public static synchronized void printusername()
 	{
