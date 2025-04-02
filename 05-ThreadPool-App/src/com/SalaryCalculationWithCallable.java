@@ -11,7 +11,7 @@ public class SalaryCalculationWithCallable implements Callable<Employee>{
 	}
 
 	@Override
-	public Employee call() throws Exception {
+	public Employee call() {
 		calculateSalary(e);
 		return e;
 	}
